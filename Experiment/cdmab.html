@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contextual Bandit Experiment">
+    <meta name="author" content="Eric Schulz">
+    <meta charset="utf-8">
+<title>Learning</title>
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <link href="css/planet.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+ </head>
+ 
+<div class="container" >
+   <div id="page1" style="display:block">
+     <h3><font color="green" FACE="bookman">SPACE MINING</font></h3>
+     <p> This study is part of a research project conducted by Emmanouil Konstantinidis, Carnegie Mellon University. </p>
+     <p> In this study, we want to investigate how humans learn over time.</p>
+     <p> Please read the instructions carefully and try to perform as well as you can.</p>
+     <p> If you have any questions, please write an email to <font color="green">eric.schulz.13 @ ucl.ac.uk</font></p>
+     <p><font color="red">Please only press the final MTurk "Submit"-button once you see the "Thank you"-page.</font></p>
+     <button type="button" name="button"; onclick="clickStart('page1', 'page2')"; >Continue</button>
+   </div>
+
+
+<div id="page2" style="display:none">
+   <h3><font color="green" FACE="bookman">SPACE MINING</font></h3>
+     <p> This study has been approved by UCL CPB Department's Ethics Chair: CPB/2014/10 <br>
+     Designed by: Eric Schulz <br>
+     Email: <font color="green">eric.schulz.13 @ ucl.ac.uk </font><br></p>
+     <p>We would like to invite you to participate in this research project. You should only participate if you want to; choosing not to take part will not disadvantage you in any way. Before you decide whether you want to take part, it is important for you to read the following information carefully and discuss it with others if you wish. Ask us if there is anything that is not clear or you would like more information.</p>
+     <p>We are investigating how people learn in new environments. In this study you will perform a simple computer task called <font color="green"><b>"Space Mining".</b></font></p>
+     <p>The study should not take longer than 20 minutes. Upon completion of the study, you will be paid a basic fee of $ 0.3 and an additional bonus between 0 and $ 0.5 depending on your perfomarnce. In order to qualify for the credit and bonus you need to finish the study.</p>
+     <p>All data will be handled according to the Data Protection Act 1998. All responses are treated as confidential and anonymous. All data will be pooled and published in aggregate form only. Only Manos Konstantinidis and researchers working with him will have access to these data. </p>
+     <p>It is up to you to decide whether or not to take part. If you choose not to participate it will involve no penalty or loss of benefits to which you are otherwise entitled. If you decide to take part you are still free to withdraw at any time and without providing a reason.</p>
+     <p>By clicking on the button below, you agree to the following:</p>
+     <br>
+     <p>I have read the above information.</p>
+     <p>I understand that I am free to withdraw from the study without penalty if I so wish and I consent to the processing of my personal information for the purposes of this study only and that it will not be used for any other purpose. I understand that such information will be treated as strictly confidential and handled in accordance with the provisions of the Data Protection Act 1998. </p>
+     <p>I understand that the information I have submitted will be published as a report. Confidentiality and anonymity will be maintained and it will not be possible to identify me from any publications. I understand that I am being paid for my assistance in this research.
+     </p>
+     <br>
+    <button type="button" name="button"; onclick="clickStart('page2','page3')"; >Agree</button>
+</div>
+
+<div id="page3" style="display:none">
+    <h3><font color="green" FACE="bookman">SPACE MINING</font></h3>
+   <p><b>Please read the following instructions very carefully: </b></p>
+   <br>
+   <p> Welcome to <font color="green" FACE="bookman">SPACE MINING</font>. You are a MINER working in outer space. It is your task to mine as many <font color="green">EMERALDS</font> as you can from 4 different planets. Emeralds are important for mankind to produce energy for transportation and computers.</p>
+   <p> You will see 4 different planets: "PLANET 1", "PLANET 2", "PLANET 3", and "PLANET 4" and it will be your task to choose one planet where you want to mine for Emeralds on each trial. Because it is hard to mine Emeralds, you can only always mine one planet at a given round.</p>
+   <p>Additionally, you will also see 3 different environmental factors: "MECURY", "KRYPTON", and "NOBELIUM". These factors describe the galaxy at the given day when you are about to mine. Each of those factors can either be on, marked by a "+", or off, marked by a "-". The factors of the galaxy on a given day influence how many Emeralds you can mine from each planet.</p>
+   <p>It is therefore your task to learn how the different factors related to the potential number of Emeralds for each planet and then to choose the planet that you think will have the highest number of Emeralds.
+   <p> Different planets might respond differently to the environmental factors of the galaxy. For example, "MERCURY" could be good for one Planet but bad for an other. It can also happen that a field produces Emeralds independently of how much "MERCURY" there is. It is your task to learn how the different PLANETS react to the environmental conditions and pick the best PLANET on each round accordingly.</p> 
+   <p>You have a total amount of 150 trials available. That means you have <b>150</b> chances to click on a PLANET and mine the Emeralds of that planet. It is your task to choose the planet wisely, so that you first get a good feeling for planet is influenced by what environmental factor and how, but also to find the best planet for the given environmental factors as quickly as possible in order to maximize the number of Emeralds overall.</p>
+   <p>Even though the number of Emeralds are direclty related to the environmental factors, there is some variation in every round. This means that the mined number of Emeralds for each field can vary slightly and are not always the same. It is your task to determine how much they can vary. The way they vary is the same across all of the plabets, which means that you will not encounter big deviations for one planet and small deviations at others.</p> 
+   <p>On the next page, you will see a short example. This example is designed so you get used to the structure of the task and does not count towards your performance assessment. The dependency of mined Emeralds in this example is very simple and not representative of the dependency in the actual task.</p> 
+   <br><br>
+   <p><b>Please click on the button below to start the task.</b></p>
+   <div style="width:500px;margin:0 auto">
+     <button type="button" name="button"; onclick="clickStart('page3','page4')"; >Start task</button>  
+   </div>
+</div>
+
+<div id="page4" style="display:none">
+  <div class="page-header">
+   <h3><font color="black" FACE="bookman">SPACE MINING</font></h3>
+   <h1> <font size="4">Please try to mine as many Emeralds as you can.</font> </h1>
+  </div>
+  <div id="explainshow" style="display:block">
+  <p> <b>Explanation:</b></p><br>
+  <p><b>I.</b> Below you see 4 different Planets. The Planets are described by three different galactic environments on each trial. The environments will influence how many Emeralds a Planet will yield.</p>
+  <p><b>II.</b> It is your task to learn how the different environmental factors influence the expected number of Emeralds on each planet and choose the planet you think will produce the highest number of Emeralds. </p>
+  <p><b>III.</b> The number of mined Emeralds will be displayed once you clicked on a Planet.</p>
+  <p><b>IV.</b> On top of the task, you can see how many investigations you have left and the total number of Emeralds mined so far.</p>
+  <p><b>V.</b> Remember, it is your task to maximize the output of Emeralds over time by choosing planets wisely. This basically means learning how the different planets respond to different environmental factors and choosing the planet you think will produce the most Emerald given the current conditions.</p>
+  <p><b>VI.</b> Remember that different planet might respond differently to the environmental factors. What is good for one planet could be bad for another and vice versa. It can also happen that a planet is indifferent to a environmental factor, meaning that it can produce Emeralds independent of it.</p>
+  <p><b>VII.</b> You have 150 investigations in total. Please try to mine as many Emeralds as possible.</p>
+  <p><b>VIII.</b> After you have clicked on a Planet, you have to click on the "Next trial"-Button to continue with the next trial.</p>
+  <font color="black">
+  <button type="button" name="button"; onclick="clickStart('explainshow','explainhide')"; >Hide explanation</button>
+  </div>
+  <div id="explainhide" style="display:none">
+  <button type="button" name="button"; onclick="clickStart('explainhide','explainshow')"; >Show explanation</button>
+  </div>
+  </font>
+   <center>
+          <b><div id="remain">Number of trials left: 150</div></b>
+          <b><div id="score">Number of Emeralds mined: 0</div></b>
+  </center> 
+  <div style="width:600px;margin:0 auto">
+  <center><font size="5">
+    <font color="black">     
+      <div id="sun"  style="display:block">MERCURY: +</div><br>
+    </font>
+   <font color="black"> 
+      <div id="rain" style="display:block">KRYPTON: -</div><br>
+    </font>
+    <font color="black"> 
+      <div id="temp" style="display:block">NOBELIUM: +</div><br>
+    </font>
+    </font>
+
+    <font color="black"> 
+      <div id="next" style="display:none">
+       <font color="darkblue" size="5"> 
+       <div id="outcome"></div>
+     </font>
+        <div id="emeralds"></div><br><br>
+         <div id="finaltext"></div><br>
+      <button type="button"; style="line-height:100%" name="next" id="nexttrial"; onclick="mynexttrial()"> Next trial</button>
+      </div>
+    </font> 
+    <div style="line-height:0%">
+           <div class="round-button"><div class="round-button-circle"><a onclick="showdeck(n=1)" id="deck1" class="round-button">PLANET 1</a></div></div>
+           <div class="round-button"><div class="round-button-circle"><a onclick="showdeck(n=2)" id="deck2" class="round-button">PLANET 2</a></div></div>
+           <div class="round-button"><div class="round-button-circle"><a onclick="showdeck(n=3)" id="deck3" class="round-button">PLANET 3</a></div></div>
+           <div class="round-button"><div class="round-button-circle"><a onclick="showdeck(n=4)" id="deck4" class="round-button">PLANET 4</a></div></div>
+    </div>
+   
+   </center> 
+   </div>
+</div>
+
+<div id="page5" style="display:none">
+        <h3><font color="green" FACE="bookman">SPACE MINING</font></h3>
+        <h1> <font size="4">Please tell us something about yourself.</font> </h1>
+         <fieldset>
+              <div style="float:left;width:400px;margin:5px">
+                How old are you?<br>
+                <input type="radio" name="age" value="20" >18-25<br>
+                <input type="radio" name="age" value="30" >26-35<br>
+                <input type="radio" name="age" value="40" >36-50<br>
+                <input type="radio" name="age" value="50" >above 50<br>
+              </div>
+              <div style="float:left;width:400px;margin:5px">
+                What's your gender?<br>
+                <input type="radio" name="gender" value="0" >Female<br>
+                <input type="radio" name="gender" value="1" >Male<br>
+              </div>
+              <div style="float:left;width:400px;margin:5px">Handedness?<br>
+                <input type="radio" name="handed" value="1" >Right<br>
+                <input type="radio" name="handed" value="2" >Left<br>
+              </div>
+         </fieldset>
+         <div style="width:50px;margin:0 auto">
+          <button type="button" name="button"; onclick="mysubmit()"; >Done</button>
+         </div>
+</div>
+
+<div id="page6" style="display:none">
+   <h3><font color="green" FACE="bookman">SPACE MINING</font></h3>
+   <h1> <font size="4">Your performance and reward</font></h1>
+   <div id="result"></div><br>
+   <div id="money"></div><br>
+   <p>Thank you very much for participating in our study.</p>
+   <p>Please press the final Amazon Mechanical Turk <b>"Submit"</b>-button now to submit your data. Doing so will result in your data to be submitted and trigger your payment in within the next 24 hours. Not doing so will lead in your data being deleted and no reward to be transferred to your account.</p><br>
+   <p>In case you have any questions, please contact us via our MTurk account or write an email to<br> <font color="green">eric.schulz.13@ucl.ac.uk</font></p>
+</div>
+
+
+<div id="HiddenPanel" style="height:75px; width:600px;text-align:center;display:none">
+        <input type="hidden" id="sunseen"    name="sunseen"    value="" />
+        <input type="hidden" id="rainseen"   name="rainseen"   value="" />
+        <input type="hidden" id="tempseen"   name="tempseen"   value="" />
+        <input type="hidden" id="chosendeck" name="chosendeck" value="" />
+        <input type="hidden" id="reward"     name="reward"     value="" />
+        <input type="hidden" id="total"      name="total"      value="" />
+        <input type="hidden" id="money"      name="money"      value="" />
+</div>
+
+</div>
+<script src="js/cdmab.js" charset="utf-8"></script>
+</body>
+</html>
